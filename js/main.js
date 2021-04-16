@@ -29,9 +29,11 @@ auth.onAuthStateChanged((user) => {
 
 //logout
 const logout = document.getElementById("logout-btn");
-logout.addEventListener("click", (e) => {
-  e.preventDefault();
-  auth.signOut().then(() => {
-    window.location.href = "./index.html";
+if (document.body.contains(someReferenceToADomElement)) {
+  logout.addEventListener("click", (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+      window.location.href = "./index.html";
+    });
   });
-});
+}
