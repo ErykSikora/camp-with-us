@@ -29,6 +29,18 @@ if ("serviceWorker" in navigator) {
     }
 }); */
 
+function enableFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
 //logout
 const logout = document.getElementById("logout-btn");
 if (document.body.contains(logout)) {
@@ -38,4 +50,10 @@ if (document.body.contains(logout)) {
       window.location.href = "./index.html";
     });
   });
+}
+
+const carouselImages = document.querySelectorAll("[data-fullscreen]");
+for (i = 0; i < carouselImages.length; i++) {
+  alert(carouselImages[i] + "dodajemy");
+  carouselImages[i].addEventListener("click", enableFullscreen);
 }
