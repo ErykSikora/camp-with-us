@@ -30,6 +30,7 @@ if ("serviceWorker" in navigator) {
 }); */
 
 function enableFullscreen(element) {
+  alert("powinno sie wydarzyc");
   if (element.requestFullscreen) {
     element.requestFullscreen();
   } else if (element.mozRequestFullScreen) {
@@ -54,6 +55,6 @@ if (document.body.contains(logout)) {
 
 const carouselImages = document.querySelectorAll("[data-fullscreen]");
 for (i = 0; i < carouselImages.length; i++) {
-  alert(carouselImages[i] + "dodajemy");
+  alert(i + " dodajemy");
   carouselImages[i].addEventListener("click", enableFullscreen);
 }
