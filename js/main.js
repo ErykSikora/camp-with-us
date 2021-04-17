@@ -31,9 +31,11 @@ if ("serviceWorker" in navigator) {
 
 //logout
 const logout = document.getElementById("logout-btn");
-logout.addEventListener("click", (e) => {
-  e.preventDefault();
-  auth.signOut().then(() => {
-    window.location.href = "./index.html";
+if (document.body.contains(logout)) {
+  logout.addEventListener("click", (e) => {
+    e.preventDefault();
+    auth.signOut().then(() => {
+      window.location.href = "./index.html";
+    });
   });
-});
+}

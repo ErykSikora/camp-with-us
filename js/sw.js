@@ -1,5 +1,6 @@
 var CACHE_NAME = "CWU";
-var urlsToCache = ["."];
+var urlsToCache = ["./.."];
+alert("kopa");
 
 self.addEventListener("install", function (event) {
   // Perform install steps
