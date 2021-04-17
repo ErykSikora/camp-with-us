@@ -319,6 +319,9 @@ body {
   background: url("../images/main.jpg") bottom center/cover no-repeat;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #showcase {
   background: url("../images/main.jpg") bottom center/cover no-repeat;
