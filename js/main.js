@@ -62,7 +62,7 @@ for (const carouselImage of carouselImages.values()) {
   carouselImage.addEventListener(
     "click",
     function () {
-      enableFullscreen(carouselImages[i]);
+      enableFullscreen(carouselImage);
     },
     false
   );
