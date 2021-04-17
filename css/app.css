@@ -316,12 +316,12 @@ body {
 }
 
 #body-index {
-  background: url("../images/main.jpeg") bottom center/cover no-repeat;
+  background: url("../images/main.jpg") bottom center/cover no-repeat;
   min-height: 100vh;
   position: relative;
 }
 #showcase {
-  background: url("../images/main.jpeg") bottom center/cover no-repeat;
+  background: url("../images/main.jpg") bottom center/cover no-repeat;
   min-height: 750px;
   position: relative;
 }
