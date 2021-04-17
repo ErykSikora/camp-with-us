@@ -59,6 +59,7 @@ if (document.body.contains(logout)) {
 const carouselImages = document.querySelectorAll("[data-fullscreen]");
 for (i = 0; i < carouselImages.length; i++) {
   alert(i + " dodajemy");
+  console.log(carouselImages[i]);
   carouselImages[i].addEventListener(
     "click",
     function () {
