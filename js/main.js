@@ -31,6 +31,7 @@ if ("serviceWorker" in navigator) {
 
 function enableFullscreen(element) {
   alert("powinno sie wydarzyc");
+  console.log(element);
   if (element.requestFullscreen) {
     element.requestFullscreen();
   }
