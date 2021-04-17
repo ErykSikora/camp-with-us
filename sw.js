@@ -1,5 +1,5 @@
 var CACHE_NAME = "CWU";
-var urlsToCache = ["./.."];
+var urlsToCache = ["."];
 
 self.addEventListener("install", function (event) {
   // Perform install steps
