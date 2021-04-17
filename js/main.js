@@ -47,6 +47,7 @@ function enableFullscreen(element) {
 
 //logout
 const logout = document.getElementById("logout-btn");
+alert("ciach");
 if (document.body.contains(logout)) {
   logout.addEventListener("click", (e) => {
     e.preventDefault();
@@ -57,10 +58,8 @@ if (document.body.contains(logout)) {
 }
 
 const carouselImages = document.querySelectorAll("[data-fullscreen]");
-for (i = 0; i < carouselImages.length; i++) {
-  alert(i + " dodssajemy");
-  console.log(carouselImages[i]);
-  carouselImages[i].addEventListener(
+for (const carouselImage of carouselImages.values()) {
+  carouselImage.addEventListener(
     "click",
     function () {
       enableFullscreen(carouselImages[i]);
