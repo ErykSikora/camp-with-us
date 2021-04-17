@@ -59,5 +59,11 @@ if (document.body.contains(logout)) {
 const carouselImages = document.querySelectorAll("[data-fullscreen]");
 for (i = 0; i < carouselImages.length; i++) {
   alert(i + " dodajemy");
-  carouselImages[i].addEventListener("click", enableFullscreen);
+  carouselImages[i].addEventListener(
+    "click",
+    function () {
+      enableFullscreen(carouselImages[i]);
+    },
+    false
+  );
 }
