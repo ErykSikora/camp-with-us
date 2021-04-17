@@ -33,7 +33,9 @@ function enableFullscreen(element) {
   alert("powinno sie wydarzyc");
   if (element.requestFullscreen) {
     element.requestFullscreen();
-  } else if (element.mozRequestFullScreen) {
+  }
+  // poniżej wyjątki gdyby przeglądarki miały swoje zabezpieczenia
+  else if (element.mozRequestFullScreen) {
     element.mozRequestFullScreen();
   } else if (element.webkitRequestFullscreen) {
     element.webkitRequestFullscreen();
