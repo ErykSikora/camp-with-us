@@ -30,8 +30,6 @@ if ("serviceWorker" in navigator) {
 }); */
 
 function enableFullscreen(element) {
-  alert("powinno sie wydarzyc");
-  console.log(element);
   if (element.requestFullscreen) {
     element.requestFullscreen();
   }
@@ -47,7 +45,6 @@ function enableFullscreen(element) {
 
 //logout
 const logout = document.getElementById("logout-btn");
-alert("ciach");
 if (document.body.contains(logout)) {
   logout.addEventListener("click", (e) => {
     e.preventDefault();
