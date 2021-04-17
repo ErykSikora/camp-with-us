@@ -1,18 +1,19 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
-    navigator.serviceWorker.register("./js/sw.js").then(
-      function (registration) {
-        console.log(
-          "ServiceWorker registration successful with scope: ",
-          registration.scope
-        );
-      },
-      function (err) {
-        console.log("ServiceWorker registration failed: ", err);
-      }
-    );
+    alert("nic do wykonania");
+    // navigator.serviceWorker.register("./js/sw.js").then(
+    //   function (registration) {
+    //     console.log(
+    //       "ServiceWorker registration successful with scope: ",
+    //       registration.scope
+    //     );
+    //   },
+    //   function (err) {
+    //     console.log("ServiceWorker registration failed: ", err);
+    //   }
+    // );
   });
-};
+}
 
 /*auth.onAuthStateChanged(user => {
     const logout = document.getElementById('logout-btn');
@@ -30,10 +31,10 @@ if ("serviceWorker" in navigator) {
 }); */
 
 //logout
-const logout = document.getElementById('logout-btn');
-logout.addEventListener('click', (e) => {
-    e.preventDefault();
-    auth.signOut().then(() => {
-        window.location.href="./index.html";
-    })
+const logout = document.getElementById("logout-btn");
+logout.addEventListener("click", (e) => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+    window.location.href = "./index.html";
+  });
 });
